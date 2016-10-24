@@ -13,8 +13,10 @@ Baixe a aplicação no estado inicial - 1o. commit - e faça o seguinte (se voc�
 
 1. Conecte o módulo angular no HTML via `ng-app`.
 2. Crie um controlador, que tenha um array de clientes.
-3. Conecte o array em uma DIV no HTML
+3. Conecte o controlador em uma DIV no HTML usando `ng-controller`
 4. Use o `ng-repeat` para mostrar os dados
+
+p.s.: Não esqueça de incluir o Angular e o js do módulo no HTML
 	
 ## Exercício 2
 

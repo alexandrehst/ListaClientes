@@ -1,8 +1,8 @@
 (function(){
 	var app = angular.module('ListaClientes', []);
 	
-	app.controller('TodoController', function(){
-		this.clientes = ; // Conecte 
+	app.controller('ClientesController', function(){
+		this.clientes = bancoDeDados; // Conecte 
 	});
 	
 	// Array que simula o Banco de dados

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<HTML>
+<HTML ng-app="ListaClientes">
 	<head>
 		
 		<title>Lista de Clientes</title>
@@ -22,37 +22,24 @@
 		<div class="container">	
 		
 			<h1 class="text-center">Lista de clientes</h1>
-		
-			<table class="table">
-				<tr>
-					<th>#</th>
-					<th>Nome</th>
-					<th>Localização</th>
-					<th>Pedidos</th>
-					<th></th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Antonio Costa</td>
-					<td>Bahia</td>
-					<td>7</td>
-					<td><button type="button" class="btn btn-danger">Excluir</button></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Sérgio Beltrão</td>
-					<td>Rio de Janeiro</td>
-					<td>3</td>
-					<td><button type="button" class="btn btn-danger">Excluir</button></td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Clóvis Carvalho LTDA</td>
-					<td>São Paulo</td>
-					<td>17</td>
-					<td><button type="button" class="btn btn-danger">Excluir</button></td>
-				</tr>
-			</table>
+			<div ng-controller="ClientesController as clientes">
+				<table class="table">
+					<tr>
+						<th>#</th>
+						<th>Nome</th>
+						<th>Localização</th>
+						<th>Pedidos</th>
+						<th></th>
+					</tr>
+					<tr ng-repeat="cliente in clientes.clientes">
+						<td>{{cliente.pos}}</td>
+						<td>{{cliente.nome}}</td>
+						<td>{{cliente.localizacao}}</td>
+						<td>{{cliente.pedidos}}</td>
+						<td><button type="button" class="btn btn-danger">Excluir</button></td>
+					</tr>
+				</table>
+			</div>
 		
 			<div class="panel panel-default">
 			  <div class="panel-heading">
@@ -77,6 +64,9 @@
 			  </div>
 			</div>
 		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 	
 </HTML>
