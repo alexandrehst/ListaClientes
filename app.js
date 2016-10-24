@@ -10,9 +10,9 @@
 		
 		$scope.adiciona = function() {
 			
-			pos = proximaPosicao(clientes);
+			var pos = proximaPosicao($scope.clientes);
 			
-			$scope.itens.push( {nome: $scope.nome,
+			$scope.clientes.push( {nome: $scope.nome,
 							   localizacao: $scope.localizacao,
 							   pedidos:$scope.pedidos} );
 							   
