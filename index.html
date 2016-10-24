@@ -36,7 +36,10 @@
 						<td>{{cliente.nome}}</td>
 						<td>{{cliente.localizacao}}</td>
 						<td>{{cliente.pedidos}}</td>
-						<td><button type="button" class="btn btn-danger">Excluir</button></td>
+						<td><button type="button" class="btn btn-danger btn-sm" ng-click="excluiCliente(cliente)">
+								<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+							</button>
+						</td>
 					</tr>
 				</table>
 			</div>

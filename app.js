@@ -1,9 +1,15 @@
 (function(){
 	var app = angular.module('ListaClientes', []);
 	
-	app.controller('ClientesController', function(){
+	app.controller('ClientesController', ['$scope', function($scope) {	
 		this.clientes = bancoDeDados; // Conecte 
-	});
+		
+		$scope.excluiCliente = function(cliente){
+			clientes = bancoDeDados;
+		
+			clientes.splice(cliente,1); 
+		}
+	}]);
 	
 	app.controller('ClientesFormController', ['$scope', function($scope) {	
 		$scope.clientes = bancoDeDados;

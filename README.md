@@ -46,6 +46,14 @@ function proximaPosicao(clientes) {
 
 ## Exercício 3
 
-1. Crie a função `excluir()` que faça o `splice` do array
+1. Crie a função `excluir()` que faça o `splice` do array. Essa função deve estar em qual controlador? Lembre-se de passar o `$scope`
+```
+$scope.excluiCliente = function(cliente){
+	clientes = bancoDeDados;
+
+	clientes.splice(cliente,1); 
+}
+```
+
 2. Conecte ao botão de exclusão via `ng-click`
 3. Ordene por ordem crescente de pedidos
