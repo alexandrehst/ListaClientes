@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<HTML>
+	<head>
+		
+		<title>Lista de Clientes</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Clientes</a>
+					</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">	
+		
+			<h1 class="text-center">Lista de clientes</h1>
+		
+			<table class="table">
+				<tr>
+					<th>#</th>
+					<th>Nome</th>
+					<th>Localização</th>
+					<th>Pedidos</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Antonio Costa</td>
+					<td>Bahia</td>
+					<td>7</td>
+					<td><button type="button" class="btn btn-danger">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Sérgio Beltrão</td>
+					<td>Rio de Janeiro</td>
+					<td>3</td>
+					<td><button type="button" class="btn btn-danger">Excluir</button></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Clóvis Carvalho LTDA</td>
+					<td>São Paulo</td>
+					<td>17</td>
+					<td><button type="button" class="btn btn-danger">Excluir</button></td>
+				</tr>
+			</table>
+		
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Digite os dados do cliente</h3>
+			  </div>
+			  <div class="panel-body">
+	  			<form role="form">
+	  				<div class="form-group">
+	  					<label for="nome">Nome:</label>
+	  					<input type="text" class="form-control" id="nome" value="digite o nome..." ng-model="nome">
+	  				</div>
+	  				<div class="form-group">
+	  					<label for="localizacao">Localizacao:</label>
+	  					<input type="text" class="form-control" id="localizacao" value="digite a localização..." ng-model="localizacao">
+	  				</div>
+	  				<div class="form-group">
+	  					<label for="pedidos">Pedidos:</label>
+	  					<input type="text" class="form-control" id="pedidos" value="quantos pedidos" ng-model="pedidos">
+	  				</div>
+	  				<button type="submit" class="btn btn-primary">Incluir</button>
+	  			</form>
+			  </div>
+			</div>
+		</div>
+	</body>
+	
+</HTML>
+
+
